@@ -1,21 +1,19 @@
-# Left Right Center
-## Introduction
-This project is a simulation of a simplified version of the dice game Left, Right, and Center. This game is entirely a game of change, with no skill or player decisions (except for a die roll).
+# Left Right Center Game
 
-## Game Rules
-In this simulation, the user will specify the number of players in the game. The names of the players will be given to you. The first player in the list of names will go first. Players will sit in a circle in the order that they appear in the list of names with a pot in the middle of the table. Each player will start with 3 chips, and roll one die for each chip, with a maximum of three dice rolled per turn. A player will the roll their 6 sided dice, and do something based on the result of those rolls. For each die, they will follow the instructions in the table:
-  
-  If the player rolls a 1, 2, or 3 (this represents a dot), the player will keep one of their chips
-  
-  If the player rolls a 4 (this represents a left), then the player passes one chip to the left (clockwise)
-  
-  If the player rolls a 5 (this represents a center), then the player places one chip in the pot
-  
-  If the player rolls a 6 (this represents a right), then the player passes one chip to the right (counter-clockwise)
+## Overview
+Welcome to Left Right Center, a simplified simulation of the dice game. This game relies solely on chance, with players making no strategic decisions other than rolling a die.
 
-After that turn, the next player will take their turn. The game continues until only one person has chips. That player is the winner. If a player has no chips, they are still in the game, but do not get to roll a die. They can begin rolling again if they are passed a chip by one of their neighbors.
+## Game Mechanics
+Players specify the number of participants at the beginning of the game. The players' names are provided, and gameplay follows a clockwise order based on the given list of names. Players sit in a circular formation around a central pot on the table. Each player starts with three chips and rolls one die per chip, with a maximum of three dice per turn.
 
-## Data Structures and C Concepts
-This project utilizes a typedef array for the dice rolls DOT, LEFT, RIGHT, CENTER
+Upon rolling the dice, players take actions based on the results:
+- Rolling 1, 2, or 3 (dot) allows the player to retain one of their chips.
+- Rolling 4 (left) requires the player to pass one chip to the player on their left (clockwise).
+- Rolling 5 (center) entails placing one chip into the central pot.
+- Rolling 6 (right) necessitates passing one chip to the player on their right (counter-clockwise).
 
-This project utilizes a random seed generator to generate dice rolls
+Play proceeds in turns, with each player taking their actions before passing to the next player. The game continues until only one player holds any chips, declaring them the winner. Players without chips remain in the game but forfeit their turn until they receive a chip from a neighboring player.
+
+## Implementation Details
+- The project employs a typedef array to represent the outcomes of dice rolls: DOT, LEFT, RIGHT, and CENTER.
+- Random seed generation is utilized to simulate dice rolls.
